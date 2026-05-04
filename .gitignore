@@ -1,0 +1,32 @@
+# Node.js
+node_modules/
+npm-debug.log
+yarn-error.log
+.env
+
+# Angular
+.angular/
+dist/
+tmp/
+out-tsc/
+bazel-out/
+
+# IDE / Editor
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Logs
+logs/
+*.log
+
+# Database
+*.sqlite
+*.sqlite3
+
+# Other
+coverage/
+.nyc_output/
