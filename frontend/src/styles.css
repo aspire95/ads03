@@ -3,12 +3,128 @@
 @tailwind utilities;
 
 :root {
-  --primary-color: #1e3a8a;
-  --secondary-color: #f3f4f6;
+  --primary-color: #000000;
+  --secondary-color: #ffffff;
 }
 
 body {
   margin: 0;
   font-family: 'Inter', system-ui, -apple-system, sans-serif;
-  background-color: var(--secondary-color);
+  background-color: #ffffff;
+  color: #000000;
+}
+
+* {
+  border-color: #000000;
+}
+
+::selection {
+  background: #000000;
+  color: #ffffff;
+}
+
+a {
+  color: #000000;
+}
+
+input,
+select,
+textarea {
+  background: #ffffff !important;
+  color: #000000 !important;
+  border-color: #000000 !important;
+}
+
+button {
+  border-color: #000000 !important;
+}
+
+[class*='text-blue'],
+[class*='text-indigo'],
+[class*='text-rose'],
+[class*='text-red'],
+[class*='text-orange'],
+[class*='text-emerald'],
+[class*='text-slate'],
+[class*='text-gray'] {
+  color: #000000 !important;
+}
+
+[class*='bg-blue'],
+[class*='bg-indigo'],
+[class*='bg-rose'],
+[class*='bg-red'],
+[class*='bg-orange'],
+[class*='bg-emerald'],
+[class*='bg-slate'],
+[class*='bg-gray'] {
+  background-color: #ffffff !important;
+}
+
+[class*='border-blue'],
+[class*='border-indigo'],
+[class*='border-rose'],
+[class*='border-red'],
+[class*='border-orange'],
+[class*='border-emerald'],
+[class*='border-slate'],
+[class*='border-gray'] {
+  border-color: #000000 !important;
+}
+
+[class*='from-'],
+[class*='via-'],
+[class*='to-'] {
+  background-image: none !important;
+}
+
+.bg-primary,
+.hover\:bg-primary:hover,
+button[type='submit'],
+button[class*='text-white'],
+a[class*='text-white'],
+aside,
+.router-link-active {
+  background-color: #000000 !important;
+  color: #ffffff !important;
+  border-color: #000000 !important;
+}
+
+aside *,
+.bg-primary *,
+button[type='submit'] *,
+button[class*='text-white'] *,
+a[class*='text-white'] *,
+.router-link-active * {
+  color: #ffffff !important;
+}
+
+.bg-white,
+[class*='bg-white'] {
+  background-color: #ffffff !important;
+}
+
+.text-white,
+[class*='text-white'] {
+  color: #ffffff !important;
+}
+
+.shadow-sm,
+.shadow-lg,
+.shadow-xl,
+.shadow-2xl {
+  box-shadow: none !important;
+}
+
+.rounded-\[2\.5rem\],
+.rounded-\[3rem\],
+.rounded-\[2rem\],
+.rounded-3xl,
+.rounded-2xl,
+.rounded-xl {
+  border-radius: 0.5rem !important;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #000000 !important;
 }

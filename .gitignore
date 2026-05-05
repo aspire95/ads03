@@ -30,3 +30,6 @@ logs/
 # Other
 coverage/
 .nyc_output/
+
+# Assignment PDF not required in GitHub
+TY_BTECH_CSE_2025-26*

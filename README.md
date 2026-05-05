@@ -1,32 +1,34 @@
-# University Student MIS (PEAN Stack)
+# University Student MIS
 
-A Student Management Information System built with **PostgreSQL**, **Express.js**, **Angular 19**, and **Node.js**.
+## Run Commands
 
-## What is in the Project?
-- **Backend**: A Node.js and Express REST API that handles database interactions, authentication, and Role-Based Access Control (Admin, Faculty, Student).
-- **Frontend**: An Angular 19 application with a modern Tailwind CSS UI, featuring dynamic table explorers and report generators.
-- **Database**: A PostgreSQL database modeled on a university schema.
+```bash
+cd backend
+npm install
+npm run setup
+npm start
+```
 
-## How to Run the Project
+```bash
+cd frontend
+npm install
+npm start
+```
 
-### 1. Database Setup
-1. Open **pgAdmin** and create a new database named `DB03`.
-2. Execute the `university_database.sql` script inside this database to create all tables and initial data.
+## Project Information
 
-### 2. Backend Setup
-1. Open a terminal and navigate to the `backend/` folder.
-2. Update the `.env` file with your PostgreSQL credentials (`DB_USER`, `DB_PASSWORD`).
-3. Run the following commands:
-   ```bash
-   npm install
-   npm run setup   # Initializes the admin user (Username: admin, Password: admin123)
-   npm start       # Starts the server at http://localhost:3000
-   ```
+- University Student MIS project for form filling and result processing.
+- Backend uses Node.js, Express.js, JWT authentication, and PostgreSQL.
+- Frontend uses Angular with Tailwind CSS.
+- Database script is available in `university_database.sql`.
+- Default backend URL: `http://localhost:3000`.
+- Default frontend URL: `http://localhost:4200`.
+- Create PostgreSQL database `DB03` before running backend setup.
+- Update backend `.env` with PostgreSQL username and password.
+- Admin setup command creates default admin login: username `admin`, password `admin123`.
+- UI is updated to a simple black-and-white theme.
+- `TY_BTECH_CSE_2025-26*` is added to `.gitignore`, so that assignment PDF pattern will not be pushed to GitHub.
 
-### 3. Frontend Setup
-1. Open a new terminal and navigate to the `frontend/` folder.
-2. Run the following commands:
-   ```bash
-   npm install
-   npm start       # Launches the application at http://localhost:4200
-   ```
+
+<!-- admin - admin123 -->
+<!-- 123456 -->
